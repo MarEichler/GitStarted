@@ -23,6 +23,10 @@ library(fontawesome)
 path <- ""
 ```
 
+**Remember:** Git is more scared of you than you are of git 
+
+<img src="www/img/eeek_git_warning.jpeg" alt="Minnie Mouse (Junior Dev) screams when she sees a mouse (git warning)" style = "width: 250px; ">
+
 
 ```{r child="rmd/commands.Rmd"}
 ```
