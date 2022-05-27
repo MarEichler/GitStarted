@@ -1,0 +1,35 @@
+---
+title: "Git Started"
+date: "Last Updated: `r Sys.time()`"
+output: 
+  html_document:
+    number_sections: true  
+    toc: true 
+    toc_float: true
+    css: www/styles.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE, warning=FALSE, message = FALSE}
+full <- TRUE
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(fontawesome)
+
+path <- ""
+```
+
+
+```{r child="rmd/commands.Rmd"}
+```
+
+```{r child="rmd/processes.Rmd"}
+```
+
+# Flow Charts 
+
+<img src="www/img/main_process.svg" alt="Main git process from GitHub repository to Local Clone flow chart" style = "width: 90%;">

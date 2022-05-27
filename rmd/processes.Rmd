@@ -1,0 +1,50 @@
+---
+title: Commands (Individual Section) 
+output: 
+  html_document:
+    number_sections: true  
+    toc: true 
+    toc_float: true
+    css: ../www/styles.css
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup-processes, include=FALSE, warning=FALSE, message = FALSE}
+if (exists("full")==FALSE){
+# ONLY USED FOR TESTING
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(fontawesome)
+
+print("TESTING")
+path <- "../"
+}
+```
+
+# Common Processes 
+
+## Rename Default Branch from Master to Main 
+
+On GitHub's website click on <code>`r fa(name = "code-branch", fill = "var(--darkblue)")`&nbsp;#&nbsp;branches</code> icon at the top left of the code on the home page of a repository.  You should see a window that specifies all the current branches as well as the default branch. Click on the edit icon (pencil on far right) to rename a branch.  
+
+After renaming the branch on the web interface, then go to your local clone, open bash and type in the following:  
+
+```bash 
+git branch -m master main
+git fetch origin
+git branch -u origin/main main
+git remote set-head origin -a
+```
+
+## Cache GitHub Credentials - Windows 
+
+[Old way, view in Wayback Machine](https://web.archive.org/web/20210623164015/https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
+
+```bash
+git config --global credential.helper wincred
+```
+
+[New way, using GitHub CLI or Git Credential Manager](https://docs.github.com/en/enterprise-server@3.4/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
