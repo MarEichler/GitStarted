@@ -43,8 +43,11 @@ git remote set-head origin -a
 
 [Old way, view in Wayback Machine](https://web.archive.org/web/20210623164015/https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
 
-```bash
-git config --global credential.helper wincred
-```
-
 [New way, using GitHub CLI or Git Credential Manager](https://docs.github.com/en/enterprise-server@3.4/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
+
+1. After installing git on a new machine, I cloned a test repository (via an RStudio .Rproj) made a small text edit and committed the change.  When I tried to push the commit to GitHub the following window popped-up asking me to sign in.  I selected **Sign in with your browser**.   
+<img class = screenshot src="`r path`www/img/gcl_01.png" alt="GitHub credential manager step 1" style = "width: 350px;">  
+1. After selecting **Sign in with your browser**, a window popped up in my default browser where I signed in to my GitHub account.  The next screen asked to authorize the credential manager, which I did by selecting **Authorize GitCredentialManager**.  
+<img class = screenshot src="`r path`www/img/gcl_02.png" alt="GitHub credential manager step 2" style = "width: 350px;">  
+1. After selecting **Authorize GitCredentialManger** the following screen appeared stating that authentication succeeded.  After this, I am able to push/pull from my machine to GitHub.  
+<img class = screenshot src="`r path`www/img/gcl_03.png" alt="GitHub credential manager step 3" style = "width: 350px;">

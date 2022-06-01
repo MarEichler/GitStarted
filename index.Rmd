@@ -23,9 +23,18 @@ library(fontawesome)
 path <- ""
 ```
 
-**Remember:** Git is more scared of you than you are of git 
 
-<img src="www/img/eeek_git_warning.jpeg" alt="Minnie Mouse (Junior Dev) screams when she sees a mouse (git warning)" style = "width: 250px; ">
+<div class="row">
+<div class="column" style="width: 320px;">
+  <p>
+  <span style = "font-size: 3.25em; font-family: Ubuntu Mono; color: var(--darkred);"> git is more scared of you than you are of git</span>
+  </p>
+</div>
+<div class="column" style="min-width: 300px;">
+  <img src="www/img/eeek_git_warning.jpeg" alt="Minnie Mouse (Junior Dev) screams when she sees a mouse (git warning)" style = "width: 250px; ">
+</div>
+</div>
+
 
 
 ```{r child="rmd/commands.Rmd"}
@@ -36,4 +45,4 @@ path <- ""
 
 # Flow Charts 
 
-<img src="www/img/main_process.svg" alt="Main git process from GitHub repository to Local Clone flow chart" style = "width: 90%;">
+<img src="`r path`www/img/main_process.svg" alt="Main git process from GitHub repository to Local Clone flow chart" style = "width: 90%;">
