@@ -1,0 +1,33 @@
+# Accessibility 
+
+## General Information/Checks
+
+- [WebAIM | Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [WAVE Web Accessibility Evaluation Tool (for website/Rshiny app)](https://wave.webaim.org/)
+- [RStudio Community | Making Shiny apps accessible for all humans - shiny](https://community.rstudio.com/t/making-shiny-apps-accessible-for-all-humans/8458/2)
+- [GitHub | thedaviddias/Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist); [https://frontendchecklist.io/](Check List)  
+- [A11Y Project | Checklist](https://www.a11yproject.com/checklist/#content)
+- [Smashing Magazine | Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)  
+- [Peatworks | Creating Accessible Data Visualizations on the Web ](https://www.peatworks.org/creating-accessible-data-visualizations-on-the-web/?utm_source=govdelivery&utm_medium=email&utm_campaign=ODEP_Newsletter_11-06)
+- [Inclusive Components | Tooltips & Toggletips](https://inclusive-components.design/tooltips-toggletips/)
+
+
+## {shiny} 
+
+- [GitHub | Issues · rstudio/shiny · Type: Accessiblity](https://github.com/rstudio/shiny/issues?q=label%3A%22Type%3A+Accessibility%22), check to see what has become accessible and current open issues on shiny's github
+- [GitHub | Shiny HTML element has no lang attribute · Issue #2844 · rstudio/shiny](https://github.com/rstudio/shiny/issues/2844);  closed: `tags$html(lang="en")`  
+- [GitHub | Added alt param by jooyoungseo · Pull Request #3006](https://github.com/rstudio/shiny/pull/3006)
+
+
+## Specific Issues 
+
+### Roman Numerals 
+
+goal was trying to figure out how to get the screen reader to read 'III' as '3' instead of as 'I I I'; couldn't figure out how to get it to work last time but here are some links I found about it
+
+- [WebAIM | Email Archives: How to write roman numerals](https://webaim.org/discussion/mail_thread?thread=5075);  
+- [Stack Overflow | accessibility - ARIA attributes for reading alternative text (e.g. Roman Numerals) in HTML ](https://stackoverflow.com/questions/28784889/aria-attributes-for-reading-alternative-text-e-g-roman-numerals-in-html)
+- [Reddit | Roman numerals and accessibility: HTML](https://www.reddit.com/r/HTML/comments/2nhiht/roman_numerals_and_accessibility/)
+- [Stack Overflow | html - How do screen readers read <abbr> tags?](https://stackoverflow.com/questions/45776312/how-do-screen-readers-read-abbr-tags)
+ 
+

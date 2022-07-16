@@ -1,9 +1,12 @@
 .Rproj.user
 .Rhistory
 .RData
-.Ruserdata
+rsconnect
+*.quarto
 
-*.html
-!index.html
 
-*.drawio
+*zzIGNORE**
+
+
+
+/.quarto/

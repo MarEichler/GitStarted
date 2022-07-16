@@ -1,4 +1,6 @@
 
+/*-- scss:rules --*/
+
 /***************************/
 /********** FONTS **********/
 /***************************/
@@ -45,13 +47,6 @@
 /********** TEXT ***********/
 /***************************/
 
-/* increase size of container (will be wider if screen is wider) */ 
-.main-container { 
-  max-width: 1800px !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 
 h1 {
   font-weight: bold; 
@@ -79,8 +74,6 @@ code {
 } 
  
 
-a {color: var(--darkred) !important;}
-a:hover {color: var(--darkblue) !important;}
 
 
 /* Create two equal columns that floats next to each other */
@@ -119,6 +112,6 @@ img.screenshot{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    margin: 7px 7px 13px 7px; <!-- top right bottom left --> 
+    margin: 7px 7px 13px 7px; /* top right bottom left */  
     align: center; 
   }

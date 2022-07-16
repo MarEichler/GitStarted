@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Git Started",
+    "section": "",
+    "text": "git is more scared of you than you are of git"
+  },
+  {
+    "objectID": "commands.html#git-commands",
+    "href": "commands.html#git-commands",
+    "title": "1  Common Commands",
+    "section": "1.1 Git Commands",
+    "text": "1.1 Git Commands\n\n\n\n\n\n \n  \n    Command \n    Description \n  \n \n\n  \n    git add --all \n    stage ALL files that have been changed/added/deleted \n  \n  \n    git add FILE \n    Stage a specific FILE \n  \n  \n    git checkout -b BRANCH \n    Create a new BRANCH and switch to that BRANCH \n  \n  \n    git checkout BRANCH \n    Switch to a specific BRANCH \n  \n  \n    git checkout FILE \n    Revert FILE to most recent commit on local repo \n  \n  \n    git commit -m 'MESSAGE' \n    Commit changes with short MESSAGE \n  \n  \n    git diff --stat --cached origin/BRANCH \n    List of files that have been commited (list of files that will be included in next git push) \n  \n  \n    git diff FILE \n    View changes for a specific FILE; if you just use git diff all changes for all files will be shown. If you have a lot of changes it will end with an (END) on the screen, to quit this screen press the Q key \n  \n  \n    git fetch origin BRANCH \n    See if there are any changes/updates from a specific BRANCH; could do this prior to git pull \n  \n  \n    git log -NUMB \n    View a list of the most recent NUMB commits; e.g. git log -2 will show 2 commits \n  \n  \n    git pull origin BRANCH \n    Pull from specific BRANCH \n  \n  \n    git push origin BRANCH \n    Push to specific BRANCH \n  \n  \n    git reset \n    Undo git add; will un-stage all files; can also use git reset FILE to unstage specific file \n  \n  \n    git status \n    see which files have been changed/added/deleted on working branch \n  \n\n\n\n\n\n\nWhat if I want to ignore any differences on my clone and ‘reset’ to the version on GitHub?\n\ngit fetch origin <branch>\nThis will get the most recent versions from GitHub\n\ngit reset --hard origin/<branch>\nThis will change all files in your clone repository to match the most up-to-date version from GitHub\n\nThis should be done rarely because any changes you have worked on will not be saved."
+  },
+  {
+    "objectID": "commands.html#unix",
+    "href": "commands.html#unix",
+    "title": "1  Common Commands",
+    "section": "1.2 UNIX",
+    "text": "1.2 UNIX\nIn addition to git command, you can use UNIX commands in the bash window.\n\n\n\n\n\n \n  \n    Command \n    Description \n  \n \n\n  \n    cd .. \n    Move up one folder; e.g. go from C:/Documents/FOLDER to C:/Documents \n  \n  \n    cd FOLDER \n    Move down into a specific folder; e.g. go from C:/Documents to C:/Documents/FOLDER \n  \n  \n    ls -l \n    View files in current folder and their recent mondification"
+  },
+  {
+    "objectID": "process.html#rename-default-branch-from-master-to-main",
+    "href": "process.html#rename-default-branch-from-master-to-main",
+    "title": "2  Common Processes",
+    "section": "2.1 Rename Default Branch from Master to Main",
+    "text": "2.1 Rename Default Branch from Master to Main\nOn GitHub’s website click on  # branches icon at the top left of the code on the home page of a repository. You should see a window that specifies all the current branches as well as the default branch. Click on the edit icon (pencil on far right) to rename a branch.\nAfter renaming the branch on the web interface, then go to your local clone, open bash and type in the following:\ngit branch -m master main\ngit fetch origin\ngit branch -u origin/main main\ngit remote set-head origin -a"
+  },
+  {
+    "objectID": "process.html#cache-github-credentials---windows",
+    "href": "process.html#cache-github-credentials---windows",
+    "title": "2  Common Processes",
+    "section": "2.2 Cache GitHub Credentials - Windows",
+    "text": "2.2 Cache GitHub Credentials - Windows\nOld way, view in Wayback Machine\nNew way, using GitHub CLI or Git Credential Manager\n\nAfter installing git on a new machine, I cloned a test repository (via an RStudio .Rproj) made a small text edit and committed the change. When I tried to push the commit to GitHub the following window popped-up asking me to sign in. I selected Sign in with your browser.\n\n\nAfter selecting Sign in with your browser, a window popped up in my default browser where I signed in to my GitHub account. The next screen asked to authorize the credential manager, which I did by selecting Authorize GitCredentialManager.\n\n\nAfter selecting Authorize GitCredentialManger the following screen appeared stating that authentication succeeded. After this, I am able to push/pull from my machine to GitHub."
+  },
+  {
+    "objectID": "process.html#git-bash-terminal-in-r-studio",
+    "href": "process.html#git-bash-terminal-in-r-studio",
+    "title": "2  Common Processes",
+    "section": "2.3 Git Bash Terminal in R Studio",
+    "text": "2.3 Git Bash Terminal in R Studio\nTools > Global Options > Terminal > New Terminals open with: Git Bash"
+  }
+]

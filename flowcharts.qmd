@@ -1,0 +1,6 @@
+# Flow Charts
+
+
+# Flow Charts 
+
+<img src="www/img/main_process.svg" alt="Main git process from GitHub repository to Local Clone flow chart" style = "width: 90%;">

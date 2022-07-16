@@ -1,0 +1,28 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Git Started"
+  date: last-modified
+  date-format: long
+  repo-url: "https://github.com/MarEichler/GitStarted"
+  chapters:
+    - index.qmd
+    - commands.qmd
+    - process.qmd 
+    - flowcharts.qmd
+
+execute: 
+  echo: false
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - www/styles.scss
+    code-overflow: scroll 
+    linkcolor: "#744953" #darkred
+
+editor: source
+

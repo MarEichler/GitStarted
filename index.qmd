@@ -1,0 +1,9 @@
+# Remember... {.unnumbered}
+
+
+::: {.column }
+<span style = "font-size: 3em; line-height: 1.25em; font-family: Ubuntu Mono; color: var(--darkred);"> git is more scared of you than you are of git</span>
+:::
+::: {.column width="250px"} 
+<img src="www/img/eeek_git_warning.jpeg" alt="Minnie Mouse (Junior Dev) screams when she sees a mouse (git warning)" style = "width: 250px;  padding-top: 1em;">
+:::
