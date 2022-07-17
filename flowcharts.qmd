@@ -1,6 +1,11 @@
 # Flow Charts
 
 
-# Flow Charts 
+## Main Process 
 
-<img src="www/img/main_process.svg" alt="Main git process from GitHub repository to Local Clone flow chart" style = "width: 90%;">
+<img src="www/img/main_process.png" alt="Main git process from GitHub repository to Local Clone flow chart" style = "width: 90%; max-width: 681px;">
+
+
+## Commands
+
+<img src="www/img/commands.png" alt="Visual representation fo some commond git commands" style = "width: 90%; max-width: 622px; ">

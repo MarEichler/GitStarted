@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.18">
+<meta name="generator" content="quarto-0.9.640">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Git Started - 2&nbsp; Common Processes</title>
+<title>Git Started - 3&nbsp; Common Processes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,7 +98,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Common Processes</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Common Processes</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -161,17 +161,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Common Commands</span></a>
+  <a href="./gitstarted.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Git Started</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./process.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Common Processes</span></a>
+  <a href="./commands.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Common Commands</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./flowcharts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Flow Charts</span></a>
+  <a href="./process.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Common Processes</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./flowcharts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Flow Charts</span></a>
   </div>
 </li>
     </ul>
@@ -183,9 +188,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#rename-default-branch-from-master-to-main" id="toc-rename-default-branch-from-master-to-main" class="nav-link active" data-scroll-target="#rename-default-branch-from-master-to-main"> <span class="header-section-number">2.1</span> Rename Default Branch from Master to Main</a></li>
-  <li><a href="#cache-github-credentials---windows" id="toc-cache-github-credentials---windows" class="nav-link" data-scroll-target="#cache-github-credentials---windows"> <span class="header-section-number">2.2</span> Cache GitHub Credentials - Windows</a></li>
-  <li><a href="#git-bash-terminal-in-r-studio" id="toc-git-bash-terminal-in-r-studio" class="nav-link" data-scroll-target="#git-bash-terminal-in-r-studio"> <span class="header-section-number">2.3</span> Git Bash Terminal in R Studio</a></li>
+  <li><a href="#rename-default-branch-from-master-to-main" id="toc-rename-default-branch-from-master-to-main" class="nav-link active" data-scroll-target="#rename-default-branch-from-master-to-main"> <span class="header-section-number">3.1</span> Rename Default Branch from Master to Main</a></li>
+  <li><a href="#cache-github-credentials---windows" id="toc-cache-github-credentials---windows" class="nav-link" data-scroll-target="#cache-github-credentials---windows"> <span class="header-section-number">3.2</span> Cache GitHub Credentials - Windows</a></li>
+  <li><a href="#git-bash-terminal-in-r-studio" id="toc-git-bash-terminal-in-r-studio" class="nav-link" data-scroll-target="#git-bash-terminal-in-r-studio"> <span class="header-section-number">3.3</span> Git Bash Terminal in R Studio</a></li>
   </ul>
 </nav>
     </div>
@@ -194,7 +199,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Common Processes</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Common Processes</span></h1>
 </div>
 
 
@@ -211,8 +216,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 
 </div>
-<section id="rename-default-branch-from-master-to-main" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="rename-default-branch-from-master-to-main"><span class="header-section-number">2.1</span> Rename Default Branch from Master to Main</h2>
+<section id="rename-default-branch-from-master-to-main" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="rename-default-branch-from-master-to-main"><span class="header-section-number">3.1</span> Rename Default Branch from Master to Main</h2>
 <p>On GitHub’s website click on <code><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:var(--darkblue);overflow:visible;position:relative;"><path d="M384 144c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 36.4 24.3 67.1 57.5 76.8-.6 16.1-4.2 28.5-11 36.9-15.4 19.2-49.3 22.4-85.2 25.7-28.2 2.6-57.4 5.4-81.3 16.9v-144c32.5-10.2 56-40.5 56-76.3 0-44.2-35.8-80-80-80S0 35.8 0 80c0 35.8 23.5 66.1 56 76.3v199.3C23.5 365.9 0 396.2 0 432c0 44.2 35.8 80 80 80s80-35.8 80-80c0-34-21.2-63.1-51.2-74.6 3.1-5.2 7.8-9.8 14.9-13.4 16.2-8.2 40.4-10.4 66.1-12.8 42.2-3.9 90-8.4 118.2-43.4 14-17.4 21.1-39.8 21.6-67.9 31.6-10.8 54.4-40.7 54.4-75.9zM80 64c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm0 384c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zm224-320c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16z"></path></svg>&nbsp;#&nbsp;branches</code> icon at the top left of the code on the home page of a repository. You should see a window that specifies all the current branches as well as the default branch. Click on the edit icon (pencil on far right) to rename a branch.</p>
 <p>After renaming the branch on the web interface, then go to your local clone, open bash and type in the following:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-m</span> master main</span>
@@ -220,8 +225,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-u</span> origin/main main</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-head origin <span class="at">-a</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="cache-github-credentials---windows" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="cache-github-credentials---windows"><span class="header-section-number">2.2</span> Cache GitHub Credentials - Windows</h2>
+<section id="cache-github-credentials---windows" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="cache-github-credentials---windows"><span class="header-section-number">3.2</span> Cache GitHub Credentials - Windows</h2>
 <p><a href="https://web.archive.org/web/20210623164015/https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git">Old way, view in Wayback Machine</a></p>
 <p><a href="https://docs.github.com/en/enterprise-server@3.4/get-started/getting-started-with-git/caching-your-github-credentials-in-git">New way, using GitHub CLI or Git Credential Manager</a></p>
 <ol type="1">
@@ -235,8 +240,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <img class="screenshot" src="www/img/gcl_03.png" alt="GitHub credential manager step 3" style="width: 350px;"></li>
 </ol>
 </section>
-<section id="git-bash-terminal-in-r-studio" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="git-bash-terminal-in-r-studio"><span class="header-section-number">2.3</span> Git Bash Terminal in R Studio</h2>
+<section id="git-bash-terminal-in-r-studio" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="git-bash-terminal-in-r-studio"><span class="header-section-number">3.3</span> Git Bash Terminal in R Studio</h2>
 <p>Tools &gt; Global Options &gt; Terminal &gt; New Terminals open with: <strong>Git Bash</strong></p>
 
 
@@ -245,21 +250,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
-  }
-  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -340,12 +330,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./commands.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Common Commands</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Common Commands</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./flowcharts.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Flow Charts</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Flow Charts</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

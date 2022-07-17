@@ -1,0 +1,127 @@
+
+# Git Started 
+
+## Setup 
+
+### Install Git Bash 
+
+Go to [git-scm.com/download](https://git-scm.com/downloads) and click on the "Windows" link under "Downloads on the main screen.  
+
+<img class= "screenshot" src="www/img/gitstarted/downloadgitbash.PNG"> 
+
+*Note:* when installing git, can update name for default branch 
+
+**Update Git Bash for Windows** 
+
+```bash
+git update-git-for-windows
+```
+
+### Create GitHub Account 
+
+#### Go to GitHub {.unnumbered}
+Go to [github.com](https://github.com/) and click either on the large green button "Sign Up for GitHub" in the middle of the page or the small button "Sign Up" in the top right corner of the page.  
+<img class= "screenshot" src="www/img/gitstarted/github01_button.PNG">
+
+
+### Create Your Account {.unnumbered}
+1. Create your own personal username 
+1. Type in your email (you can add multiple emails to an account after finishing setup, so you can use both personal and organization emails)
+1. Create your personal password
+1. Click on the large blue button "Create account"
+
+* *Optional:* un-check box so you don't receive additional emails from GitHub
+* *Note:* You may have to 'verify' account by completing some Captcha. 
+
+<img class= "screenshot" src="www/img/gitstarted/github02_enter.PNG">  
+
+
+### Access Repositories 
+
+Depending on your groups set-up you may get access to a group of repositories by receiving an invitation to a [GitHub Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations).  You may also receive an invitation to a specific repository as well.  
+
+## Basic Git PRocesses 
+
+### Create Clone 
+
+<ol>
+<li>Go to repository webpage </li>
+<li>Click on the green "Code" button and copy the HTTPS path using the clipboard button </li> 
+<img class= "screenshot" src="www/img/gitstarted/createclone01.png"> 
+<li>Go to the place on your machine where you want to have the code </li>
+<i>Note: </i>Interacting with GitHub will be much faster if you put the code directly on your machine rather than on your personal hal folder.  I like to keep all my clones `C:\PROJECT-CLONES`.  This also makes the pathways shorter because it doesn't inlcude your name.  
+<li>Right click in the folder and select "Git Bash Here" </li>
+<img class= "screenshot" src="www/img/gitstarted/createclone02.png"> 
+<li>Git Bash window will appear with the path reflecting the path  </li>
+<img class= "screenshot" src="www/img/gitstarted/createclone03.png"> 
+<li>Write the command `git clone REPO_HTTPS_PATH` where `REPO_HTTPS_PATH` is the url from step 1; press Enter</li> 
+<i>Note:</i> You can't copy/paste using Ctr+C/Ctr+V, but you can copy/paste using Ctr+C/Shift+Insert  
+<img class= "screenshot" src="www/img/gitstarted/createclone04.png"> 
+<li> A folder will appear which has the same name as the repository, all files from the repo will be download there (in this example it's just a README.md file)</li> 
+<img class= "screenshot" src="www/img/gitstarted/createclone05.png"> 
+</ol>
+
+### Make Edits to Code  
+
+<ol>
+<li> Go into repository folder on machine, right click and select "Git Bash Here" </li> 
+<li> **PRIOR TO MAKING ANY EDITS PULL MOST RECENT CODE FROM REPO:** `git pull origin BRANCH`</li> 
+Most often the `BRANCH` you will be working on is `main` or `master`.  The branch you are working on will show up in blue font in parenthesis in the git bash window. Pulling the most recent code is essential for collaborative coding, this helps prevents conflicts to the code if edits are made on multiple different versions.  <br>
+<i>Example: Code on Machine Already Up-to-Date (no changes were made)</i> 
+ <img class= "screenshot" src="www/img/gitstarted/edit01.png"> <br>
+<i>Example: Code on Machine Updated (changes to code on machine)</i> 
+ <img class= "screenshot" src="www/img/gitstarted/edit02.png"> 
+<li> After you have pulled any changes, now you can start editing your document </li>
+<li> After edits are complete, repeat step 1 to open the git bash window </li> 
+<li> See which files were added, edited, or deleted using `git status` </li> 
+In this case, I have made edits to the README.md file.  
+ <img class= "screenshot" src="www/img/gitstarted/edit03.png">
+<li> Review the changes by using `git diff` </li>
+`git diff` will show all changes for any file, if you only want to look at changes for a specific file use `git diff FILE`.  
+Red font means that text has been deleted and green font means that text has been added.  
+<img class= "screenshot" src="www/img/gitstarted/edit04.png"> 
+<li> Once you are comfortable with your changes you need to stage the files, or 'add' them so they can be committed.  </li>
+  <ul>
+  <li> `git add --all` will stage all files that are listed after the `git status` command </li>
+  <li> `git add FILE` will add only a specific file </li>
+  <li> `git add *.R` will add all files that have a .R extension (stage all R scripts) 
+  </ul>
+<img class= "screenshot" src="www/img/gitstarted/edit05.png">
+<li> Check that your files have been staged by using the `git status` command again, files that were in red font should now be in green font, indicating that they have been staged and are ready to be committed.  
+<img class= "screenshot" src="www/img/gitstarted/edit06.png"> 
+<li> Commit changes using `git commit -m 'MESSAGE'` where `MESSAGE` is a short description of the edits.  
+<img class= "screenshot" src="www/img/gitstarted/edit07.png"> 
+<li> Finally, push your commits to GitHub using `git push origin BRANCH`
+Most often the `BRANCH` you will be working on is `main` or `master`.  Originally, the default branch was always called 'master'.  Starting in fall 2020, GitHub changed the default branch name to be 'main'.   
+<img class= "screenshot" src="www/img/gitstarted/edit08.png"> 
+</ol>
+
+### Simple Review   
+
+* **PULL:** `git pull origin BRANCH`; to update code 
+* **EDIT:** Make edits to files 
+* *Optional:* `git status` to view which files have changed
+* *Optional:* `git diff` to view line by line changes 
+* **STAGE:** `git add --all` to stage all files 
+* **COMMIT:**`git commit -m 'MESSAGE'` to commit changes 
+* **PUSH:** `git push origin BRANCH` to send changes to GitHub so others can access 
+
+
+### Update Remote Link  
+
+<ol>
+<li> Go into repository on GitHub, click the green "Code" button and copy the HTTPS url </li> 
+<li> Got to the repository folder on your machine, right click and select "Git Bash Here" </li>
+<li> Change the remote link with the following: 
+```bash
+git remote set-url origin NEW_URL
+```
+<li> Check to see if the link has been updated using: 
+```bash
+git config --get remote.origin.url
+```
+The URL should now be the updated version.  
+<!-- <br>
+<img class= "screenshot" src="img/updateremotelink/03changeremote.PNG"> -->
+</li>
+</ol>

@@ -9,6 +9,7 @@ book:
   repo-url: "https://github.com/MarEichler/GitStarted"
   chapters:
     - index.qmd
+    - gitstarted.qmd
     - commands.qmd
     - process.qmd 
     - flowcharts.qmd

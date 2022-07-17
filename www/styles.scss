@@ -74,14 +74,10 @@ th {
 /*****************************/
 /** OTHER **/
 
-img {
-  max-width: 900px !important;
-}
-
 img.screenshot{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     margin: 7px 7px 13px 7px; /* top right bottom left */  
-    align: center; 
+    width: 100%;
   }
