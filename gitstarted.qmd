@@ -107,21 +107,3 @@ Most often the `BRANCH` you will be working on is `main` or `master`.  Originall
 * **PUSH:** `git push origin BRANCH` to send changes to GitHub so others can access 
 
 
-### Update Remote Link  
-
-<ol>
-<li> Go into repository on GitHub, click the green "Code" button and copy the HTTPS url </li> 
-<li> Got to the repository folder on your machine, right click and select "Git Bash Here" </li>
-<li> Change the remote link with the following: 
-```bash
-git remote set-url origin NEW_URL
-```
-<li> Check to see if the link has been updated using: 
-```bash
-git config --get remote.origin.url
-```
-The URL should now be the updated version.  
-<!-- <br>
-<img class= "screenshot" src="img/updateremotelink/03changeremote.PNG"> -->
-</li>
-</ol>

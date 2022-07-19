@@ -12,6 +12,7 @@ book:
     - gitstarted.qmd
     - commands.qmd
     - process.qmd 
+    - merge.qmd
     - flowcharts.qmd
 
 execute: 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.640">
+<meta name="generator" content="quarto-1.0.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -88,7 +88,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./flowcharts.html" rel="next">
+<link href="./merge.html" rel="next">
 <link href="./commands.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -98,7 +98,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -176,7 +176,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./flowcharts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Flow Charts</span></a>
+  <a href="./merge.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Merging</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./flowcharts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Flow Charts</span></a>
   </div>
 </li>
     </ul>
@@ -191,6 +196,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#rename-default-branch-from-master-to-main" id="toc-rename-default-branch-from-master-to-main" class="nav-link active" data-scroll-target="#rename-default-branch-from-master-to-main"> <span class="header-section-number">3.1</span> Rename Default Branch from Master to Main</a></li>
   <li><a href="#cache-github-credentials---windows" id="toc-cache-github-credentials---windows" class="nav-link" data-scroll-target="#cache-github-credentials---windows"> <span class="header-section-number">3.2</span> Cache GitHub Credentials - Windows</a></li>
   <li><a href="#git-bash-terminal-in-r-studio" id="toc-git-bash-terminal-in-r-studio" class="nav-link" data-scroll-target="#git-bash-terminal-in-r-studio"> <span class="header-section-number">3.3</span> Git Bash Terminal in R Studio</a></li>
+  <li><a href="#update-remote-link" id="toc-update-remote-link" class="nav-link" data-scroll-target="#update-remote-link"> <span class="header-section-number">3.4</span> Update Remote Link</a></li>
   </ul>
 </nav>
     </div>
@@ -243,6 +249,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="git-bash-terminal-in-r-studio" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="git-bash-terminal-in-r-studio"><span class="header-section-number">3.3</span> Git Bash Terminal in R Studio</h2>
 <p>Tools &gt; Global Options &gt; Terminal &gt; New Terminals open with: <strong>Git Bash</strong></p>
+</section>
+<section id="update-remote-link" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="update-remote-link"><span class="header-section-number">3.4</span> Update Remote Link</h2>
+<p>Remote link will need to be updated if the repo changes names or ownership.</p>
+<ol>
+<li>
+Go into repository on GitHub, click the green “Code” button and copy the HTTPS url
+</li>
+<li>
+Got to the repository folder on your machine, right click and select “Git Bash Here”
+</li>
+<li>
+<p>Change the remote link with the following:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin NEW_URL</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</li><li>
+<p>Check to see if the link has been updated using:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--get</span> remote.origin.url</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+The URL should now be the updated version.<br>
+<!-- <br>
+<img class= "screenshot" src="img/updateremotelink/03changeremote.PNG"> -->
+</li>
+</ol>
 
 
 </section>
@@ -250,6 +278,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -334,8 +377,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./flowcharts.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Flow Charts</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./merge.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Merging</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

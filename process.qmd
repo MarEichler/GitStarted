@@ -35,3 +35,25 @@ git remote set-head origin -a
 ## Git Bash Terminal in R Studio 
 
 Tools > Global Options > Terminal > New Terminals open with: **Git Bash** 
+
+
+## Update Remote Link  
+
+Remote link will need to be updated if the repo changes names or ownership.  
+
+<ol>
+<li> Go into repository on GitHub, click the green "Code" button and copy the HTTPS url </li> 
+<li> Got to the repository folder on your machine, right click and select "Git Bash Here" </li>
+<li> Change the remote link with the following: 
+```bash
+git remote set-url origin NEW_URL
+```
+<li> Check to see if the link has been updated using: 
+```bash
+git config --get remote.origin.url
+```
+The URL should now be the updated version.  
+<!-- <br>
+<img class= "screenshot" src="img/updateremotelink/03changeremote.PNG"> -->
+</li>
+</ol>

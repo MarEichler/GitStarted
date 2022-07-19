@@ -29,6 +29,7 @@ tribble(
     , "git checkout FILE"      , "Revert <code>FILE</code> to most recent commit on local repo"
     , "git checkout BRANCH"    , "Switch to a specific <code>BRANCH</code>"
     , "git checkout -b BRANCH" , "Create a new <code>BRANCH</code> and switch to that <code>BRANCH</code>"
+    , "git branch -av"         , "View all of the branches (local and remote)"
   ) %>%
   arrange(Command) %>%  #put in alphabetical order 
   mutate(Command = paste0("<code>", Command, "</code>")) %>% 

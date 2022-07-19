@@ -1,0 +1,75 @@
+# Merging
+ 
+
+## Merge Conflicts 
+
+Merge conflicts arise when there are multiple commits to a single file that are in conflict and git isn't sure which one to use.  
+
+### On Local Machine
+
+Merge conflicts that occur while doing `git pull` on your local machine will be indicated in the git bash.  
+
+
+```bash 
+USERNAME@MACHINE OS PATH/TO/REPO (main)
+$ git pull origin main 
+From https://github.com/ORG/REPO
+* branch            main       -> FETCH_HEAD
+Auto-merging FILE
+CONFLICT (content): Merge conflict in FILE
+Automatic merge failed; fix conflicts and then commit the result.
+
+USERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)
+$
+```
+
+Open up the FILE and you will see the following format for each conflict: 
+
+```bash
+<<<<<<< HEAD  
+Code made by change B
+==========
+Code made by change A
+>>>>>>>>>>>>> COMMIT
+```
+
+Keep the code you want in the file and remove the conflict indicator lines of code: 
+
+- `<<<<<<< HEAD`
+- `==========`
+- `>>>>>>>>>>>>> COMMIT`
+
+
+Save and commit those changes and if the merge is resolved, the `MERGING` indicator will be removed from the git bash. Then you can push up to GitHub. 
+
+
+```bash 
+USERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)
+$ git add FILE 
+
+USERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)
+$ git commit -m 'resolve merge' 
+
+USERNAME@MACHINE OS PATH/TO/REPO (main)
+$ git push origin main 
+```
+
+
+### GitHub Pull Requests 
+
+Conflicts generally arise when creating a pull request when different commits have been made to same file on the different branches.  
+
+When on GitHub in a specific Pull Request you can click on 'Resolve Conflicts' button and you will be able to address each conflict which will appear as follows: 
+
+```bash 
+<<<<<<< DEV_BRANCH  
+Code made by change B
+==========
+Code made by change A
+>>>>>>>>>>>>> MAIN_BRANCH
+```
+
+
+Similar to on your local machine, keep which code you want and remove the conflict indicator lines of code.  
+
+Once all conflicts are resloved, you will then be able to merge and complete the pull request.  
