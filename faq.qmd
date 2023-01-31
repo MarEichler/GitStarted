@@ -1,0 +1,9 @@
+# FAQ 
+
+## Why set an upstream branch for a local branch? 
+
+- Can use short hand commands `git push` and `git pull` without specifying `origin <branch>` 
+- Git can inform on uncyned commits which haven't been pushed/pulled yet 
+
+[Source: Tower - Set Upstream](https://www.git-tower.com/learn/git/faq/set-upstream)  
+[Source: Stackoverflow - why use `--set-upstream`](https://stackoverflow.com/questions/37770467/why-do-i-have-to-git-push-set-upstream-origin-branch)

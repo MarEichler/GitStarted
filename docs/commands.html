@@ -126,7 +126,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./flowcharts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Flow Charts</span></a>
+  <a href="./faq.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">FAQ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./flowcharts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Flow Charts</span></a>
   </div>
 </li>
     </ul>
@@ -217,6 +222,10 @@ ul.task-list li input[type="checkbox"] {
    <td style="text-align:left;"> View changes for a specific <code>FILE</code>; if you just use <code>git diff</code> all changes for all files will be shown. If you have a lot of changes it will end with an <code>(END)</code> on the screen, to quit this screen press the <b>Q</b> key </td>
   </tr>
   <tr>
+   <td style="text-align:left;"> <code>git fetch --prune origin</code> </td>
+   <td style="text-align:left;"> Fetch branches from origin and prune branches </td>
+  </tr>
+  <tr>
    <td style="text-align:left;"> <code>git fetch origin BRANCH</code> </td>
    <td style="text-align:left;"> See if there are any changes/updates from a specific <code>BRANCH</code>; could do this prior to <code>git pull</code> </td>
   </tr>
@@ -227,6 +236,10 @@ ul.task-list li input[type="checkbox"] {
   <tr>
    <td style="text-align:left;"> <code>git pull origin BRANCH</code> </td>
    <td style="text-align:left;"> Pull from specific <code>BRANCH</code> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> <code>git push --set-upstream origin BRANCH</code> </td>
+   <td style="text-align:left;"> Push to remote and set upstream </td>
   </tr>
   <tr>
    <td style="text-align:left;"> <code>git push origin BRANCH</code> </td>
@@ -252,10 +265,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><strong>What if I want to ignore any differences on my clone and ‘reset’ to the version on GitHub?</strong></p>
 <ol type="1">
-<li><code>git fetch origin &lt;branch&gt;</code><br>
+<li><code>git fetch origin BRANCH</code><br>
 This will get the most recent versions from GitHub<br>
 </li>
-<li><code>git reset --hard origin/&lt;branch&gt;</code><br>
+<li><code>git reset --hard origin/BRANCH</code><br>
 This will change all files in your clone repository to match the most up-to-date version from GitHub</li>
 </ol>
 <p>This should be done rarely because any changes you have worked on will not be saved.</p>

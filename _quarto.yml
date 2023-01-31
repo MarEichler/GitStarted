@@ -13,6 +13,7 @@ book:
     - commands.qmd
     - process.qmd 
     - merge.qmd
+    - faq.qmd
     - flowcharts.qmd
 
 execute: 
