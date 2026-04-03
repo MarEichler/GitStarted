@@ -6,7 +6,7 @@ library(fontawesome)
 
 ## Remove Local Branch After Merge 
 
-After merging a task branch into main on GitHub, you will delete it.  This branch will no longer be available on the GitHu browser but it is still on your local machine.  
+After merging a task branch into main on GitHub, you will delete it.  This branch will no longer be available on the GitHub browser but it is still on your local machine.  
 
 After merging and deleting the merged branch: 
 

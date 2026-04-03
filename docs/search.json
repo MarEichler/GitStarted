@@ -64,7 +64,7 @@
     "href": "commands.html#unix",
     "title": "2  Common Commands",
     "section": "2.2 UNIX",
-    "text": "2.2 UNIX\nIn addition to git command, you can use UNIX commands in the bash window.\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ncd ..\nMove up one folder; e.g. go from C:/Documents/FOLDER to C:/Documents\n\n\ncd FOLDER\nMove down into a specific folder; e.g. go from C:/Documents to C:/Documents/FOLDER\n\n\nls -l\nView files in current folder and their recent mondification",
+    "text": "2.2 UNIX\nIn addition to git command, you can use UNIX commands in the bash window/terminal.\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ncd ..\nMove up one folder; e.g. go from C:/Documents/FOLDER to C:/Documents\n\n\ncd FOLDER\nMove down into a specific folder; e.g. go from C:/Documents to C:/Documents/FOLDER\n\n\nls -l\nView files in current folder and their recent mondification",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Common Commands</span>"
     ]
@@ -74,7 +74,7 @@
     "href": "process.html",
     "title": "3  Common Processes",
     "section": "",
-    "text": "3.1 Remove Local Branch After Merge\nAfter merging a task branch into main on GitHub, you will delete it. This branch will no longer be available on the GitHu browser but it is still on your local machine.\nAfter merging and deleting the merged branch:",
+    "text": "3.1 Remove Local Branch After Merge\nAfter merging a task branch into main on GitHub, you will delete it. This branch will no longer be available on the GitHub browser but it is still on your local machine.\nAfter merging and deleting the merged branch:",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
     ]
