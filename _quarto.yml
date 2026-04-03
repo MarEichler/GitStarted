@@ -21,6 +21,7 @@ execute:
 
 format:
   html:
+    toc-depth: 4
     theme: 
       - cosmo
       - www/styles.scss

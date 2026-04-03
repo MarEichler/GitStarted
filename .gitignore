@@ -4,9 +4,12 @@
 rsconnect
 *.quarto
 
+.DS_Store 
 
 *zzIGNORE**
 
 
 
 /.quarto/
+
+**/*.quarto_ipynb
