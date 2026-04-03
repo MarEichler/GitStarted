@@ -4,90 +4,199 @@
     "href": "index.html",
     "title": "Git Started",
     "section": "",
-    "text": "Remember…\n\n git is more scared of you than you are of git"
+    "text": "Remember…\n\n git is more scared of you than you are of git",
+    "crumbs": [
+      "Remember..."
+    ]
+  },
+  {
+    "objectID": "gitstarted.html",
+    "href": "gitstarted.html",
+    "title": "1  Git Started",
+    "section": "",
+    "text": "1.1 Setup",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git Started</span>"
+    ]
   },
   {
     "objectID": "gitstarted.html#setup",
     "href": "gitstarted.html#setup",
     "title": "1  Git Started",
-    "section": "1.1 Setup",
-    "text": "1.1 Setup\n\n1.1.1 Install Git Bash\nGo to git-scm.com/download and click on the “Windows” link under “Downloads on the main screen.\n\nNote: when installing git, can update name for default branch\nUpdate Git Bash for Windows\ngit update-git-for-windows\n\n\n1.1.2 Create GitHub Account\n\nGo to GitHub\nGo to github.com and click either on the large green button “Sign Up for GitHub” in the middle of the page or the small button “Sign Up” in the top right corner of the page.\n\n\n\n\nCreate Your Account\n\nCreate your own personal username\nType in your email (you can add multiple emails to an account after finishing setup, so you can use both personal and organization emails)\nCreate your personal password\nClick on the large blue button “Create account”\n\n\nOptional: un-check box so you don’t receive additional emails from GitHub\nNote: You may have to ‘verify’ account by completing some Captcha.\n\n\n\n\n1.1.3 Access Repositories\nDepending on your groups set-up you may get access to a group of repositories by receiving an invitation to a GitHub Organization. You may also receive an invitation to a specific repository as well."
+    "section": "",
+    "text": "1.1.1 Install Git Bash\nGo to git-scm.com/download and following the instructions for your operating system. For Windows you download an .exc file, for macOS you install homebrew and git via the command line using the terminal.\n\n\n\n1.1.2 Create GitHub Account\n\nGo to GitHub\nGo to github.com and click either on the large green button “Sign Up for GitHub” in the middle of the page or the small button “Sign Up” in the top right corner of the page.\n\n\n\nCreate Your Account\n\nCreate your own personal username\nType in your email (you can add multiple emails to an account after finishing setup, so you can use both personal and organization emails)\nCreate your personal password\nClick on the large blue button “Create account”\n\n\nOptional: un-check box so you don’t receive additional emails from GitHub\nNote: You may have to ‘verify’ account by completing some Captcha.\n\n\n\n\n\n1.1.3 Access Repositories\nDepending on your groups set-up you may get access to a group of repositories by receiving an invitation to a GitHub Organization. You may also receive an invitation to a specific repository as well.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git Started</span>"
+    ]
   },
   {
-    "objectID": "gitstarted.html#basic-git-processes",
-    "href": "gitstarted.html#basic-git-processes",
+    "objectID": "gitstarted.html#basic-git-processes-windows",
+    "href": "gitstarted.html#basic-git-processes-windows",
     "title": "1  Git Started",
-    "section": "1.2 Basic Git PRocesses",
-    "text": "1.2 Basic Git PRocesses\n\n1.2.1 Create Clone\n\n\nGo to repository webpage\n\n\nClick on the green “Code” button and copy the HTTPS path using the clipboard button\n\n\n\nGo to the place on your machine where you want to have the code\n\nNote: Interacting with GitHub will be much faster if you put the code directly on your machine rather than on your personal hal folder. I like to keep all my clones C:\\PROJECT-CLONES. This also makes the pathways shorter because it doesn’t inlcude your name.\n\n\nRight click in the folder and select “Git Bash Here”\n\n\n\nGit Bash window will appear with the path reflecting the path\n\n\n\nWrite the command git clone REPO_HTTPS_PATH where REPO_HTTPS_PATH is the url from step 1; press Enter\n\nNote: You can’t copy/paste using Ctr+C/Ctr+V, but you can copy/paste using Ctr+C/Shift+Insert\n\n\nA folder will appear which has the same name as the repository, all files from the repo will be download there (in this example it’s just a README.md file)\n\n\n\n\n\n1.2.2 Make Edits to Code\n\n\nGo into repository folder on machine, right click and select “Git Bash Here”\n\n\nPRIOR TO MAKING ANY EDITS PULL MOST RECENT CODE FROM REPO: git pull origin BRANCH\n\nMost often the BRANCH you will be working on is main or master. The branch you are working on will show up in blue font in parenthesis in the git bash window. Pulling the most recent code is essential for collaborative coding, this helps prevents conflicts to the code if edits are made on multiple different versions.  Example: Code on Machine Already Up-to-Date (no changes were made)   Example: Code on Machine Updated (changes to code on machine) \n\nAfter you have pulled any changes, now you can start editing your document\n\n\nAfter edits are complete, repeat step 1 to open the git bash window\n\n\nSee which files were added, edited, or deleted using git status\n\nIn this case, I have made edits to the README.md file.\n\n\nReview the changes by using git diff\n\ngit diff will show all changes for any file, if you only want to look at changes for a specific file use git diff FILE.\nRed font means that text has been deleted and green font means that text has been added.\n\n\nOnce you are comfortable with your changes you need to stage the files, or ‘add’ them so they can be committed.\n\n\n\ngit add --all will stage all files that are listed after the git status command\n\n\ngit add FILE will add only a specific file\n\n\ngit add *.R will add all files that have a .R extension (stage all R scripts)\n\n\n\nCheck that your files have been staged by using the git status command again, files that were in red font should now be in green font, indicating that they have been staged and are ready to be committed.\n\n\nCommit changes using git commit -m 'MESSAGE' where MESSAGE is a short description of the edits.\n\n\nFinally, push your commits to GitHub using git push origin BRANCH Most often the BRANCH you will be working on is main or master. Originally, the default branch was always called ‘master’. Starting in fall 2020, GitHub changed the default branch name to be ‘main’.\n\n\n\n\n1.2.3 Simple Review\n\nPULL: git pull origin BRANCH; to update code\nEDIT: Make edits to files\nOptional: git status to view which files have changed\nOptional: git diff to view line by line changes\nSTAGE: git add --all to stage all files\nCOMMIT:git commit -m 'MESSAGE' to commit changes\nPUSH: git push origin BRANCH to send changes to GitHub so others can access"
+    "section": "1.2 Basic Git Processes (Windows)",
+    "text": "1.2 Basic Git Processes (Windows)\n\n1.2.1 Create Clone\n\n\nGo to repository webpage\n\n\nClick on the green “Code” button and copy the HTTPS path using the clipboard button\n\n\n\nGo to the place on your machine where you want to have the code\n\nNote: Interacting with GitHub will be much faster if you put the code directly on your machine rather than on your personal hal folder. I like to keep all my clones C:\\PROJECT-CLONES. This also makes the pathways shorter because it doesn’t inlcude your name.\n\n\nRight click in the folder and select “Git Bash Here”\n\n\n\nGit Bash window will appear with the path reflecting the path\n\n\n\nWrite the command git clone REPO_HTTPS_PATH where REPO_HTTPS_PATH is the url from step 1; press Enter\n\nNote: You can’t copy/paste using Ctr+C/Ctr+V, but you can copy/paste using Ctr+C/Shift+Insert\n\n\nA folder will appear which has the same name as the repository, all files from the repo will be download there (in this example it’s just a README.md file)\n\n\n\n\n\n1.2.2 Make Edits to Code\n\n\nGo into repository folder on machine, right click and select “Git Bash Here”\n\n\nPRIOR TO MAKING ANY EDITS PULL MOST RECENT CODE FROM REPO: git pull origin BRANCH\n\nMost often the BRANCH you will be working on is main or master. The branch you are working on will show up in blue font in parenthesis in the git bash window. Pulling the most recent code is essential for collaborative coding, this helps prevents conflicts to the code if edits are made on multiple different versions.  Example: Code on Machine Already Up-to-Date (no changes were made)   Example: Code on Machine Updated (changes to code on machine) \n\nAfter you have pulled any changes, now you can start editing your document\n\n\nAfter edits are complete, repeat step 1 to open the git bash window\n\n\nSee which files were added, edited, or deleted using git status\n\nIn this case, I have made edits to the README.md file.\n\n\nReview the changes by using git diff\n\ngit diff will show all changes for any file, if you only want to look at changes for a specific file use git diff FILE.\nRed font means that text has been deleted and green font means that text has been added.\n\n\nOnce you are comfortable with your changes you need to stage the files, or ‘add’ them so they can be committed.\n\n\n\ngit add --all will stage all files that are listed after the git status command\n\n\ngit add FILE will add only a specific file\n\n\ngit add *.R will add all files that have a .R extension (stage all R scripts)\n\n\n\nCheck that your files have been staged by using the git status command again, files that were in red font should now be in green font, indicating that they have been staged and are ready to be committed.\n\n\nCommit changes using git commit -m 'MESSAGE' where MESSAGE is a short description of the edits.\n\n\nFinally, push your commits to GitHub using git push origin BRANCH Most often the BRANCH you will be working on is main or master. Originally, the default branch was always called ‘master’. Starting in fall 2020, GitHub changed the default branch name to be ‘main’.\n\n\n\n\n1.2.3 Simple Review\n\nPULL: git pull origin BRANCH; to update code\nEDIT: Make edits to files\nOptional: git status to view which files have changed\nOptional: git diff to view line by line changes\nSTAGE: git add --all to stage all files\nCOMMIT:git commit -m 'MESSAGE' to commit changes\nPUSH: git push origin BRANCH to send changes to GitHub so others can access",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Git Started</span>"
+    ]
   },
   {
-    "objectID": "commands.html#git-commands",
-    "href": "commands.html#git-commands",
+    "objectID": "commands.html",
+    "href": "commands.html",
     "title": "2  Common Commands",
-    "section": "2.1 Git Commands",
-    "text": "2.1 Git Commands\n\n\n\n\n\n \n  \n    Command \n    Description \n  \n \n\n  \n    git add --all \n    stage ALL files that have been changed/added/deleted \n  \n  \n    git add FILE \n    Stage a specific FILE \n  \n  \n    git branch -av \n    View all of the branches (local and remote) \n  \n  \n    git checkout -b BRANCH \n    Create a new BRANCH and switch to that BRANCH \n  \n  \n    git checkout BRANCH \n    Switch to a specific BRANCH \n  \n  \n    git checkout FILE \n    Revert FILE to most recent commit on local repo \n  \n  \n    git commit -m 'MESSAGE' \n    Commit changes with short MESSAGE \n  \n  \n    git diff --stat --cached origin/BRANCH \n    List of files that have been commited (list of files that will be included in next git push) \n  \n  \n    git diff FILE \n    View changes for a specific FILE; if you just use git diff all changes for all files will be shown. If you have a lot of changes it will end with an (END) on the screen, to quit this screen press the Q key \n  \n  \n    git fetch --prune origin \n    Fetch branches from origin and prune branches \n  \n  \n    git fetch origin BRANCH \n    See if there are any changes/updates from a specific BRANCH; could do this prior to git pull \n  \n  \n    git log -NUMB \n    View a list of the most recent NUMB commits; e.g. git log -2 will show 2 commits \n  \n  \n    git pull origin BRANCH \n    Pull from specific BRANCH \n  \n  \n    git push --set-upstream origin BRANCH \n    Push to remote and set upstream \n  \n  \n    git push origin BRANCH \n    Push to specific BRANCH \n  \n  \n    git remote prune origin \n    Prune all stale branches from origin \n  \n  \n    git reset \n    Undo git add; will un-stage all files; can also use git reset FILE to unstage specific file \n  \n  \n    git status \n    see which files have been changed/added/deleted on working branch \n  \n\n\n\n\n\n\nWhat if I want to ignore any differences on my clone and ‘reset’ to the version on GitHub?\n\ngit fetch origin BRANCH\nThis will get the most recent versions from GitHub\n\ngit reset --hard origin/BRANCH\nThis will change all files in your clone repository to match the most up-to-date version from GitHub\n\nThis should be done rarely because any changes you have worked on will not be saved."
+    "section": "",
+    "text": "2.1 Git",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Common Commands</span>"
+    ]
+  },
+  {
+    "objectID": "commands.html#git",
+    "href": "commands.html#git",
+    "title": "2  Common Commands",
+    "section": "",
+    "text": "Command\nDescription\n\n\n\n\ngit add --all\nstage ALL files that have been changed/added/deleted\n\n\ngit add FILE\nStage a specific FILE\n\n\ngit branch -av\nView all of the branches (local and remote)\n\n\ngit checkout -b BRANCH\nCreate a new BRANCH and switch to that BRANCH\n\n\ngit checkout BRANCH\nSwitch to a specific BRANCH\n\n\ngit checkout FILE\nRevert FILE to most recent commit on local repo\n\n\ngit commit -m 'MESSAGE'\nCommit changes with short MESSAGE\n\n\ngit diff --stat --cached origin/BRANCH\nList of files that have been commited (list of files that will be included in next git push)\n\n\ngit diff FILE\nView changes for a specific FILE; if you just use git diff all changes for all files will be shown. If you have a lot of changes it will end with an (END) on the screen, to quit this screen press the Q key\n\n\ngit fetch --prune origin\nFetch branches from origin and prune branches\n\n\ngit fetch origin BRANCH\nSee if there are any changes/updates from a specific BRANCH; could do this prior to git pull\n\n\ngit log -NUMB\nView a list of the most recent NUMB commits; e.g. git log -2 will show 2 commits\n\n\ngit pull origin BRANCH\nPull from specific BRANCH\n\n\ngit push --set-upstream origin BRANCH\nPush to remote and set upstream\n\n\ngit push origin BRANCH\nPush to specific BRANCH\n\n\ngit reset\nUndo git add; will un-stage all files; can also use git reset FILE to unstage specific file\n\n\ngit status\nsee which files have been changed/added/deleted on working branch",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Common Commands</span>"
+    ]
   },
   {
     "objectID": "commands.html#unix",
     "href": "commands.html#unix",
     "title": "2  Common Commands",
     "section": "2.2 UNIX",
-    "text": "2.2 UNIX\nIn addition to git command, you can use UNIX commands in the bash window.\n\n\n\n\n\n \n  \n    Command \n    Description \n  \n \n\n  \n    cd .. \n    Move up one folder; e.g. go from C:/Documents/FOLDER to C:/Documents \n  \n  \n    cd FOLDER \n    Move down into a specific folder; e.g. go from C:/Documents to C:/Documents/FOLDER \n  \n  \n    ls -l \n    View files in current folder and their recent mondification"
+    "text": "2.2 UNIX\nIn addition to git command, you can use UNIX commands in the bash window.\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ncd ..\nMove up one folder; e.g. go from C:/Documents/FOLDER to C:/Documents\n\n\ncd FOLDER\nMove down into a specific folder; e.g. go from C:/Documents to C:/Documents/FOLDER\n\n\nls -l\nView files in current folder and their recent mondification",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Common Commands</span>"
+    ]
+  },
+  {
+    "objectID": "process.html",
+    "href": "process.html",
+    "title": "3  Common Processes",
+    "section": "",
+    "text": "3.1 Remove Local Branch After Merge\nAfter merging a task branch into main on GitHub, you will delete it. This branch will no longer be available on the GitHu browser but it is still on your local machine.\nAfter merging and deleting the merged branch:",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
+    ]
+  },
+  {
+    "objectID": "process.html#remove-local-branch-after-merge",
+    "href": "process.html#remove-local-branch-after-merge",
+    "title": "3  Common Processes",
+    "section": "",
+    "text": "git fetch origin - pull all changes to repo\n\ngit checkout main - check out main (or develop), as long as you aren’t on the branch that is going to be removed\n\ngit remote prune origin - remove all the remote branches that have been deleted\n\ngit branch -d BRANCH - delete branch locally, may need to use -D to force delete",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
+    ]
+  },
+  {
+    "objectID": "process.html#ignore-any-differnces-on-clone-and-resent-to-version-on-github",
+    "href": "process.html#ignore-any-differnces-on-clone-and-resent-to-version-on-github",
+    "title": "3  Common Processes",
+    "section": "3.2 Ignore any differnces on clone and resent to version on GitHub",
+    "text": "3.2 Ignore any differnces on clone and resent to version on GitHub\n\ngit fetch origin BRANCH\nThis will get the most recent versions from GitHub\n\ngit reset --hard origin/BRANCH\nThis will change all files in your clone repository to match the most up-to-date version from GitHub\n\nThis should be done rarely because any changes you have worked on will not be saved.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
+    ]
   },
   {
     "objectID": "process.html#rename-default-branch-from-master-to-main",
     "href": "process.html#rename-default-branch-from-master-to-main",
     "title": "3  Common Processes",
-    "section": "3.1 Rename Default Branch from Master to Main",
-    "text": "3.1 Rename Default Branch from Master to Main\nOn GitHub’s website click on  # branches icon at the top left of the code on the home page of a repository. You should see a window that specifies all the current branches as well as the default branch. Click on the edit icon (pencil on far right) to rename a branch.\nAfter renaming the branch on the web interface, then go to your local clone, open bash and type in the following:\ngit branch -m master main\ngit fetch origin\ngit branch -u origin/main main\ngit remote set-head origin -a"
+    "section": "3.3 Rename Default Branch from Master to Main",
+    "text": "3.3 Rename Default Branch from Master to Main\nOn GitHub’s website click on  # branches icon at the top left of the code on the home page of a repository. You should see a window that specifies all the current branches as well as the default branch. Click on the edit icon (pencil on far right) to rename a branch.\nAfter renaming the branch on the web interface, then go to your local clone, open bash and type in the following:\ngit branch -m master main\ngit fetch origin\ngit branch -u origin/main main\ngit remote set-head origin -a",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
+    ]
   },
   {
-    "objectID": "process.html#cache-github-credentials---windows",
-    "href": "process.html#cache-github-credentials---windows",
+    "objectID": "process.html#cache-github-credentials-windows",
+    "href": "process.html#cache-github-credentials-windows",
     "title": "3  Common Processes",
-    "section": "3.2 Cache GitHub Credentials - Windows",
-    "text": "3.2 Cache GitHub Credentials - Windows\nOld way, view in Wayback Machine\nNew way, using GitHub CLI or Git Credential Manager\n\nAfter installing git on a new machine, I cloned a test repository (via an RStudio .Rproj) made a small text edit and committed the change. When I tried to push the commit to GitHub the following window popped-up asking me to sign in. I selected Sign in with your browser.\n\n\nAfter selecting Sign in with your browser, a window popped up in my default browser where I signed in to my GitHub account. The next screen asked to authorize the credential manager, which I did by selecting Authorize GitCredentialManager.\n\n\nAfter selecting Authorize GitCredentialManger the following screen appeared stating that authentication succeeded. After this, I am able to push/pull from my machine to GitHub."
+    "section": "3.4 Cache GitHub Credentials (Windows)",
+    "text": "3.4 Cache GitHub Credentials (Windows)\nOld way, view in Wayback Machine\nNew way, using GitHub CLI or Git Credential Manager\n\nAfter installing git on a new machine, I cloned a test repository (via an RStudio .Rproj) made a small text edit and committed the change. When I tried to push the commit to GitHub the following window popped-up asking me to sign in. I selected Sign in with your browser.\n\n\nAfter selecting Sign in with your browser, a window popped up in my default browser where I signed in to my GitHub account. The next screen asked to authorize the credential manager, which I did by selecting Authorize GitCredentialManager.\n\n\nAfter selecting Authorize GitCredentialManger the following screen appeared stating that authentication succeeded. After this, I am able to push/pull from my machine to GitHub.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
+    ]
   },
   {
     "objectID": "process.html#git-bash-terminal-in-r-studio",
     "href": "process.html#git-bash-terminal-in-r-studio",
     "title": "3  Common Processes",
-    "section": "3.3 Git Bash Terminal in R Studio",
-    "text": "3.3 Git Bash Terminal in R Studio\nTools > Global Options > Terminal > New Terminals open with: Git Bash"
+    "section": "3.5 Git Bash Terminal in R Studio",
+    "text": "3.5 Git Bash Terminal in R Studio\nTools &gt; Global Options &gt; Terminal &gt; New Terminals open with: Git Bash",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
+    ]
   },
   {
     "objectID": "process.html#update-remote-link",
     "href": "process.html#update-remote-link",
     "title": "3  Common Processes",
-    "section": "3.4 Update Remote Link",
-    "text": "3.4 Update Remote Link\nRemote link will need to be updated if the repo changes names or ownership.\n\n\nGo into repository on GitHub, click the green “Code” button and copy the HTTPS url\n\n\nGot to the repository folder on your machine, right click and select “Git Bash Here”\n\n\nChange the remote link with the following:\ngit remote set-url origin NEW_URL\n\nCheck to see if the link has been updated using:\ngit config --get remote.origin.url\nThe URL should now be the updated version."
+    "section": "3.6 Update Remote Link",
+    "text": "3.6 Update Remote Link\nRemote link will need to be updated if the repo changes names or ownership.\n\n\nGo into repository on GitHub, click the green “Code” button and copy the HTTPS url\n\n\nGot to the repository folder on your machine, right click and select “Git Bash Here”\n\n\nChange the remote link with the following:\ngit remote set-url origin NEW_URL\n\nCheck to see if the link has been updated using:\ngit config --get remote.origin.url\nThe URL should now be the updated version.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Common Processes</span>"
+    ]
+  },
+  {
+    "objectID": "merge.html",
+    "href": "merge.html",
+    "title": "4  Merging",
+    "section": "",
+    "text": "4.1 Merge Conflicts\nMerge conflicts arise when there are multiple commits to a single file that are in conflict and git isn’t sure which one to use.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Merging</span>"
+    ]
   },
   {
     "objectID": "merge.html#merge-conflicts",
     "href": "merge.html#merge-conflicts",
     "title": "4  Merging",
-    "section": "4.1 Merge Conflicts",
-    "text": "4.1 Merge Conflicts\nMerge conflicts arise when there are multiple commits to a single file that are in conflict and git isn’t sure which one to use.\n\n4.1.1 On Local Machine\nMerge conflicts that occur while doing git pull on your local machine will be indicated in the git bash.\nUSERNAME@MACHINE OS PATH/TO/REPO (main)\n$ git pull origin main \nFrom https://github.com/ORG/REPO\n* branch            main       -> FETCH_HEAD\nAuto-merging FILE\nCONFLICT (content): Merge conflict in FILE\nAutomatic merge failed; fix conflicts and then commit the result.\n\nUSERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)\n$\nOpen up the FILE and you will see the following format for each conflict:\n<<<<<<< HEAD  \nCode made by change B\n==========\nCode made by change A\n>>>>>>>>>>>>> COMMIT\nKeep the code you want in the file and remove the conflict indicator lines of code:\n\n<<<<<<< HEAD\n==========\n>>>>>>>>>>>>> COMMIT\n\nSave and commit those changes and if the merge is resolved, the MERGING indicator will be removed from the git bash. Then you can push up to GitHub.\nUSERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)\n$ git add FILE \n\nUSERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)\n$ git commit -m 'resolve merge' \n\nUSERNAME@MACHINE OS PATH/TO/REPO (main)\n$ git push origin main \n\n\n4.1.2 GitHub Pull Requests\nConflicts generally arise when creating a pull request when different commits have been made to same file on the different branches.\nWhen on GitHub in a specific Pull Request you can click on ‘Resolve Conflicts’ button and you will be able to address each conflict which will appear as follows:\n<<<<<<< DEV_BRANCH  \nCode made by change B\n==========\nCode made by change A\n>>>>>>>>>>>>> MAIN_BRANCH\nSimilar to on your local machine, keep which code you want and remove the conflict indicator lines of code.\nOnce all conflicts are resloved, you will then be able to merge and complete the pull request."
+    "section": "",
+    "text": "4.1.1 On Local Machine\nMerge conflicts that occur while doing git pull on your local machine will be indicated in the git bash.\nUSERNAME@MACHINE OS PATH/TO/REPO (main)\n$ git pull origin main \nFrom https://github.com/ORG/REPO\n* branch            main       -&gt; FETCH_HEAD\nAuto-merging FILE\nCONFLICT (content): Merge conflict in FILE\nAutomatic merge failed; fix conflicts and then commit the result.\n\nUSERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)\n$\nOpen up the FILE and you will see the following format for each conflict:\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD  \nCode made by change B\n==========\nCode made by change A\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; COMMIT\nKeep the code you want in the file and remove the conflict indicator lines of code:\n\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\n==========\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; COMMIT\n\nSave and commit those changes and if the merge is resolved, the MERGING indicator will be removed from the git bash. Then you can push up to GitHub.\nUSERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)\n$ git add FILE \n\nUSERNAME@MACHINE OS PATH/TO/REPO (main|MERGING)\n$ git commit -m 'resolve merge' \n\nUSERNAME@MACHINE OS PATH/TO/REPO (main)\n$ git push origin main \n\n\n4.1.2 GitHub Pull Requests\nConflicts generally arise when creating a pull request when different commits have been made to same file on the different branches.\nWhen on GitHub in a specific Pull Request you can click on ‘Resolve Conflicts’ button and you will be able to address each conflict which will appear as follows:\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; DEV_BRANCH  \nCode made by change B\n==========\nCode made by change A\n&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt; MAIN_BRANCH\nSimilar to on your local machine, keep which code you want and remove the conflict indicator lines of code.\nOnce all conflicts are resloved, you will then be able to merge and complete the pull request.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Merging</span>"
+    ]
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "5  FAQ",
+    "section": "",
+    "text": "5.1 Why set an upstream branch for a local branch?\nSource: Tower - Set Upstream\nSource: Stackoverflow - why use --set-upstream",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FAQ</span>"
+    ]
   },
   {
     "objectID": "faq.html#why-set-an-upstream-branch-for-a-local-branch",
     "href": "faq.html#why-set-an-upstream-branch-for-a-local-branch",
     "title": "5  FAQ",
-    "section": "5.1 Why set an upstream branch for a local branch?",
-    "text": "5.1 Why set an upstream branch for a local branch?\n\nCan use short hand commands git push and git pull without specifying origin <branch>\nGit can inform on uncyned commits which haven’t been pushed/pulled yet\n\nSource: Tower - Set Upstream\nSource: Stackoverflow - why use --set-upstream"
+    "section": "",
+    "text": "Can use short hand commands git push and git pull without specifying origin &lt;branch&gt;\nGit can inform on uncyned commits which haven’t been pushed/pulled yet",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>FAQ</span>"
+    ]
   },
   {
-    "objectID": "flowcharts.html#main-process",
-    "href": "flowcharts.html#main-process",
+    "objectID": "flowcharts.html",
+    "href": "flowcharts.html",
     "title": "6  Flow Charts",
-    "section": "6.1 Main Process",
-    "text": "6.1 Main Process"
+    "section": "",
+    "text": "6.1 Main Process",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Flow Charts</span>"
+    ]
   },
   {
     "objectID": "flowcharts.html#commands",
     "href": "flowcharts.html#commands",
     "title": "6  Flow Charts",
     "section": "6.2 Commands",
-    "text": "6.2 Commands"
+    "text": "6.2 Commands",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Flow Charts</span>"
+    ]
   }
 ]
