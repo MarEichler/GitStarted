@@ -5,17 +5,9 @@
 
 ### Install Git Bash 
 
-Go to [git-scm.com/download](https://git-scm.com/downloads) and click on the "Windows" link under "Downloads on the main screen.  
+Go to [git-scm.com/download](https://git-scm.com/downloads) and following the instructions for your operating system.  For Windows you download an .exc file, for macOS you install homebrew and git via the command line using the terminal.  
 
-<img class= "screenshot" src="www/img/gitstarted/downloadgitbash.PNG"> 
-
-*Note:* when installing git, can update name for default branch 
-
-**Update Git Bash for Windows** 
-
-```bash
-git update-git-for-windows
-```
+<img class= "screenshot" src="www/img/gitstarted/gitinstall.png"> 
 
 ### Create GitHub Account 
 
@@ -24,7 +16,7 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 <img class= "screenshot" src="www/img/gitstarted/github01_button.PNG">
 
 
-### Create Your Account {.unnumbered}
+#### Create Your Account {.unnumbered}
 1. Create your own personal username 
 1. Type in your email (you can add multiple emails to an account after finishing setup, so you can use both personal and organization emails)
 1. Create your personal password
@@ -40,7 +32,7 @@ Go to [github.com](https://github.com/) and click either on the large green butt
 
 Depending on your groups set-up you may get access to a group of repositories by receiving an invitation to a [GitHub Organization](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/about-organizations).  You may also receive an invitation to a specific repository as well.  
 
-## Basic Git PRocesses 
+## Basic Git Processes (Windows) 
 
 ### Create Clone 
 
